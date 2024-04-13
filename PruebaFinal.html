@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ferriol Babures" />
+    <title>Calculadora alimentos</title>
+    <link rel="stylesheet" href="PruebaFinal.css" />
+  </head>
+  <body>
+    <header><h1>Calcula tu ingesta diaria de Alimentos</h1></header>
+    <main>
+      <!--Selección de alimentos-->
+      <section id="alimentos">
+        <h2>Seleccione el alimento ingerido:</h2>
+        <button id="agregar_alimento">
+          Agregar Alimento<span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </section>
+      <!--Calcular el total de calorías-->
+      <section id="containercalc">
+        <button id="calcular-calorias">
+          Calcular total calorías <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <section id="resultados"></section>
+      </section>
+      <!--Máximo de kCal diario-->
+      <section id="maximo">
+        <div id="maximocontainer">
+          <h2>Cuántas Kcal quieres ingerir al día</h2>
+          <label for="maximoKcal">Kcal máximas al día</label>
+          <input type="text" id="maximoKcal" name="maximoKcal" />
+          <button id="maxKcalDia">
+            ¿Cuántas Kcal llevo? <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <section id="resultadosMaximo"></section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
